@@ -1,0 +1,277 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* Black background */
+.outer-wrapper {
+  background: #000;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 10px 0; /* pehle zyada tha → ab kam */
+}
+
+/* Center card */
+.main-container {
+  width: 95%; /* pehle 90% tha → ab full near edge */
+  max-width: 1300px;
+  background: #fff;
+  border-radius: 20px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 30px; /* left/right tight */
+  gap: 40px;
+}
+
+.left {
+  max-width: 500px;
+}
+
+.left h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.left p {
+  color: gray;
+  margin: 15px 0;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.primary {
+  background: #16a34a;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.secondary {
+  background: #eee;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  color: #000;
+}
+
+/* Features */
+.features {
+  display: flex;
+  gap: 40px;
+  margin-top: 25px;
+}
+
+.features .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 6px;
+  font-size: 14px;
+  color: #444;
+}
+
+.features svg {
+  width: 26px;
+  height: 26px;
+  stroke: #111;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* RIGHT IMAGE */
+.right {
+  width: 50%;
+  height: 32vh;
+}
+
+.icons a {
+  color: black;      /* remove blue */
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.outer-wrapper {
+  background: #000 !important;
+
+  min-height: 100vh !important;
+
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+
+  padding: 0 !important;
+}
+
+.main-container {
+  background: url("https://i.postimg.cc/vHx2kc4S/IMG-20260430-WA0016.jpg") no-repeat center !important;
+  background-size: 99% !important;
+  background-color: transparent !important;
+  
+  border-radius: 20px;
+  width: 95% !important;
+  max-width: 1200px !important;
+}
+
+.hero {
+  padding: 20px !important;
+  height: 32vh !important;
+  width: 100% !important;
+}
+
+body, html {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.icons a,
+.logo,
+.primary,
+.secondary {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.hero-image-wrapper,
+.hero-image,
+.preview-card {
+  display: none !important;
+}
+
+.hero,
+.hero-bg {
+  background: none !important;
+}
+
+/* 🔥 FULL RESET TOP AREA */
+.main-container {
+  padding-top: 0px !important;
+  position: relative !important;
+  z-index: auto !important;
+}
+
+.hero {
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+/* 🔥 image section bhi transparent */
+.hero-right,
+.hero .right {
+  background: transparent !important;
+}
+
+/* 🔥 REMOVE EXTRA SPACE ABOVE LOGO */
+.main-container > *:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* 🔥 HEADER PERFECT POSITION */
+header,
+.navbar {
+  margin-top: 0 !important;
+  padding-top: 10px !important;
+}
+
+/* 🔥 REMOVE FAKE TOP BLOCK */
+.main-container::before,
+.main-container::after,
+.hero::before,
+.hero::after {
+  display: none !important;
+  content: none !important;
+  height: 0 !important;
+}
+
+/* 🔥 FIX ICON STYLE */
+.navbar svg,
+.navbar a,
+header svg,
+header a {
+  color: #000 !important;
+  fill: #000 !important;
+  background: none !important;
+  border: none !important;
+}
+
+/* 🔥 IMPORTANT (TAILWIND OVERRIDE) */
+* {
+  box-shadow: none !important;
+}
+
+/* 🔥 move icons to correct position */
+.main-container {
+  position: static !important;
+  min-height: 32vh !important;
+  height: 32vh !important;
+  overflow: visible !important;
+}
+
+header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-right: 12px;
+}
+
+.header-icons {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  margin-top: 6px;
+  transform: translate(-8px, 4px);
+}
+
+.header-icons img {
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  object-fit: contain;
+}
+
+.sub-text {
+  display: block;
+  color: #444;
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 500;
+}
